@@ -1,7 +1,7 @@
 import Button from "@/components/Button";
 
 import { PostDataTypes } from "@/types";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { PencilSquareIcon, TrashIcon } from '@heroicons/react/24/solid'
 
 import {Link } from "react-router-dom";
 
@@ -16,14 +16,14 @@ const Todos = ({ title, body, id }: PostDataTypes) => {
           <div className="m-3 flex gap-4">
             <Button
               text="edit"
-              Icon={Bars3Icon}
+              Icon={PencilSquareIcon}
               styles="bg-orange-500 hover:bg-orange-300"
             />
             <Button
               
               text="delete"
-              Icon={XMarkIcon}
-              styles="bg-red-500 hover:bg-red-300  hover:text-white "
+              Icon={TrashIcon}
+              styles="bg-red-500 hover:bg-red-300 ml-2 hover:text-white "
             />
           </div>
         </div>
